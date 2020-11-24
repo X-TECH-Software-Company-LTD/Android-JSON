@@ -16,6 +16,12 @@ https://cdn.xtsmm.com/android/libraries/Android%20JSON.zip
 File -> New -> Import Module -> select Downloaded "Android JSON" Folder
 ```
 
+3 - Add to App Gradle (path : Folder Name)
+
+```
+implementation(project(path: ':Android JSON'))
+```
+
 ## Usage
 You can set headers , user-agent , etc ..
 ```
