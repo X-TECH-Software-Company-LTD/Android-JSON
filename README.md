@@ -42,6 +42,13 @@ You can set headers , user-agent , etc ..
         }
     });
 ```
+
+You can set any header like 
+ 
+``` JsonObject.put("my-header", "my-value"); ```
+
+you can use multiple linses.
+
 If you do not want to add headers JSON Arry , you can replace it with null .
 
 
