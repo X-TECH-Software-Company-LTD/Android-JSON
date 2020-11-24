@@ -1,5 +1,5 @@
 # Android-JSON
-to get / post / put / delete json with headers and user agents
+to get / post / put / delete / options / trace / head / patch / json with headers and user agents
 ``` Using Google Android Volley ```
 
 
