@@ -49,6 +49,6 @@ You can set any header like
 
 you can use multiple linses.
 
-If you do not want to add headers JSON Arry , you can replace it with null .
+If you do not want to add headers , you can replace it with null .
 
-
+``` new xJson(MainActivity.this).request("get", "https://cdn.xtsmm.com/android/json/test.json", JsonArray, new OnEventListener<String>() { ... ```
