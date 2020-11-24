@@ -51,6 +51,7 @@ you can use multiple linses.
 
 If you do not want to add headers , you can replace it with null .
 
-``` new xJson(MainActivity.this).request("get", "https://cdn.xtsmm.com/android/json/test.json", null, new OnEventListener<String>() {
+``` 
+new xJson(MainActivity.this).request("get", "https://cdn.xtsmm.com/android/json/test.json", null, new OnEventListener<String>() {
     ... 
 ```
