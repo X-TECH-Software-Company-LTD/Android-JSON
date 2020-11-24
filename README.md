@@ -10,12 +10,10 @@ to get / post / put / delete / options / trace / head / patch / json with header
 https://cdn.xtsmm.com/android/libraries/Android%20JSON.zip
 
 
-2 - Add Library at App gradle
+2 - Import Module
 
 ```
-dependencies {
-    implementation project(path: ':Android JSON')
-}
+File -> New -> Import Module -> select Downloaded "Android JSON" Folder
 ```
 
 ## Usage
