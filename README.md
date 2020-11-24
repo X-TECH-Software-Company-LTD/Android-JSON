@@ -33,8 +33,8 @@ You can set headers , user-agent , etc ..
     JsonArray.put(JsonObject);
     new xJson(MainActivity.this).request("get", "https://cdn.xtsmm.com/android/json/test.json", JsonArray, new OnEventListener<String>() {
         @Override
-        public void onSuccess(String object) {
-            Log.d("xTechLog", object);
+        public void onSuccess(String json) {
+            Log.d("xTechLog", json);
         }
         @Override
         public void onFailure(Exception e) {
