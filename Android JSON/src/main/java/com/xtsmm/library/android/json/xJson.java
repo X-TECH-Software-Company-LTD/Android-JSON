@@ -48,28 +48,28 @@ public class xJson {
         }
         Map<String, String> finalParams = params;
         int requestMethod=Request.Method.GET;
-        if(method.toUpperCase()=="GET" || method=="get"){
+        if(method.toUpperCase().equals("GET") || method.equals("get")){
             requestMethod=Request.Method.GET;
         }
-        else if(method.toUpperCase()=="DELETE" || method=="delete"){
+        else if(method.toUpperCase().equals("DELETE") || method.equals("delete")){
             requestMethod=Request.Method.DELETE;
         }
-        else if(method.toUpperCase()=="HEAD" || method=="head"){
+        else if(method.toUpperCase().equals("HEAD") || method.equals("head")){
             requestMethod=Request.Method.HEAD;
         }
-        else if(method.toUpperCase()=="OPTIONS" || method=="options"){
+        else if(method.toUpperCase().equals("OPTIONS") || method.equals("options")){
             requestMethod=Request.Method.OPTIONS;
         }
-        else if(method.toUpperCase()=="PATCH" || method=="patch"){
+        else if(method.toUpperCase().equals("PATCH") || method.equals("patch")){
             requestMethod=Request.Method.PATCH;
         }
-        else if(method.toUpperCase()=="POST" || method=="post"){
+        else if(method.toUpperCase().equals("POST") || method.equals("post")){
             requestMethod=Request.Method.POST;
         }
-        else if(method.toUpperCase()=="PUT" || method=="put"){
+        else if(method.toUpperCase().equals("PUT") || method.equals("put")){
             requestMethod=Request.Method.PUT;
         }
-        else if(method.toUpperCase()=="TRACE" || method=="trace"){
+        else if(method.toUpperCase().equals("TRACE") || method.equals("trace")){
             requestMethod=Request.Method.TRACE;
         }
 
