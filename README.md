@@ -5,7 +5,7 @@ to get / post / put / delete / options / trace / head / patch / json with header
 
 ## Import Library to Gradle
 
-1 - Download "Android JSON.zip" and place inside your "projectName/" folder .
+1 - Download "Android JSON.zip" , extract and place inside your "projectName/" folder .
 
 https://cdn.xtsmm.com/android/libraries/Android%20JSON.zip
 
