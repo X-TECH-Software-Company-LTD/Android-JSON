@@ -25,37 +25,53 @@ implementation(project(path: ':Android JSON'))
 ## Usage
 You can set headers , user-agent , etc ..
 ```
-    JSONArray JsonArray = new JSONArray();
-    JSONObject JsonObject = new JSONObject();
-    try {
-        JsonObject.put("User-Agent", "xTechSoftware");
-        JsonObject.put("header", "xTechSoftware");
+                JSONArray headerJArray = new JSONArray();
+                JSONObject headerJObject = new JSONObject();
+                try {
+                    headerJObject.put("User-Agent", "xTechSoftware");
+                    headerJObject.put("header", "xTechSoftware");
 
-    } catch (JSONException e) {
-        e.printStackTrace();
-    }
-    JsonArray.put(JsonObject);
-    new xJson(MainActivity.this).request("get", "https://cdn.xtsmm.com/android/json/test.json", JsonArray, new OnEventListener<String>() {
-        @Override
-        public void onSuccess(String json) {
-            Log.d("xTechLog", json);
-        }
-        @Override
-        public void onFailure(Exception e) {
-            Log.d("xTechLog", e.toString());
-        }
-    });
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                headerJArray.put(headerJObject);
+
+                JSONArray bodyJArray = new JSONArray();
+                JSONObject bodyJObject = new JSONObject();
+                try {
+                    bodyJObject.put("username", "xTechUser");
+                    bodyJObject.put("password", "123ok");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                bodyJArray.put(bodyJObject);
+                new xJson(MainActivity.this).request("post", "https://cdn.xtsmm.com/android/json/test.json", headerJArray,bodyJArray, new OnEventListener<String>() {
+                    @Override
+                    public void onSuccess(String json) {
+                        Log.d("xTechLog", json);
+                    }
+                    @Override
+                    public void onFailure(Exception e) {
+                        Log.d("xTechLog", e.toString());
+                    }
+                });
 ```
 
-You can set any header like 
+You can put any post body  
  
-``` JsonObject.put("my-header", "my-value"); ```
+``` bodyJObject.put("username", "xTechUser"); ```
+
+You can put any header  
+ 
+``` headerJObject.put("User-Agent", "xTechSoftware"); ```
+
 
 you can use multiple linses.
 
 If you do not want to add headers , you can replace it with null .
 
 ``` 
-new xJson(MainActivity.this).request("get", "https://cdn.xtsmm.com/android/json/test.json", null, new OnEventListener<String>() {
+new xJson(MainActivity.this).request("get", "https://cdn.xtsmm.com/android/json/test.json", null, null,new OnEventListener<String>() {
     ... 
 ```
